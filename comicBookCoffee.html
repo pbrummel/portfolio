@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Portfolio site for Peter Brummel">
+    <meta name="author" content="Peter Brummel">
+    <meta charset="UTF-8">
+    <title>Peter Brummel</title>
+
+    <!-- CSS normalization to start from neutral slate across all browsers -->
+    <link rel="stylesheet" href="normalize.css">
+
+    <!-- Google Font Links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kurale">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=STIX Two Text">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Big Shoulders Display">
+    <link href="https://fonts.cdnfonts.com/css/comica-bd" rel="stylesheet">
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- General CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_comicBook.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">Peter Brummel</a></h1>
+
+        <nav class="navbar nav-fill navbar-expand-md" aria-label="Main navigation">
+            <a class="navbar-brand" href="#"></a>
+            <button type="button" class="navbar-toggler navbar-light float-right text-right" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" role="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse show navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item"><a class="nav-link" href="apps.html">Apps</a></li>
+                    <li class="nav-item"><a class="nav-link" href="websites.html">Websites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="branding.html">Branding</a></li>
+                    <li class="nav-item"><a class="nav-link" href="UIUX.html">UI/UX</a></li>
+                    <li class="nav-item"><a class="nav-link" href="misc.html">Misc.</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2>Comic Book Coffee</h2>
+        <p>Mock campaign for a fun-flled, make-believe brand of coffee</p>
+    </header>
+
+    <main>
+        <img id="myImg" src="portImages/comicBookCoffee1.png" alt="Design Brief">
+        <img id="myImg2" src="portImages/comicBookCoffee2.jpg" alt="Product examples">
+        <img id="myImg3" src="portImages/comicBookCoffee4.jpg" alt="Mug example">
+        <img id="myImg4" src="portImages/comicBookCoffee5.jpg" alt="Logo">
+        <img id="myImg6" src="portImages/comicBookCoffee7.jpg" alt="Ideation">
+        <img id="myImg5" src="portImages/comicBookCoffee6.jpg" alt="Mood Board">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+
+        </div>
+
+    </main>
+
+    <br>
+
+    <footer>
+        <br>
+        <a class="email" href="aboutMe.html">About Me</a>
+        <br>
+        <a class="email" href="http://caweb.madisoncollege.edu/Students/Spring2021/pbrummel/InteractiveResume/resume.html" target="_blank">Resume</a>
+        <br>
+        <a class="email" href="mailto:pbrummel@gmail.com">Contact</a>
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var img2 = document.getElementById("myImg2");
+        var img3 = document.getElementById("myImg3");
+        var img4 = document.getElementById("myImg4");
+        var img5 = document.getElementById("myImg5");
+        var img6 = document.getElementById("myImg6");
+        var modalImg = document.getElementById("img01");
+        var modalImg2 = document.getElementById("img02");
+        var modalImg3 = document.getElementById("img03");
+        var modalImg4 = document.getElementById("img04");
+        var modalImg5 = document.getElementById("img05");
+        var modalImg6 = document.getElementById("img06");
+        var captionText = document.getElementById("caption");
+        var captionText2 = document.getElementById("caption2");
+        var captionText3 = document.getElementById("caption3");
+        var captionText4 = document.getElementById("caption4");
+        var captionText5 = document.getElementById("caption5");
+        var captionText6 = document.getElementById("caption6");
+
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        img2.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        img3.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        img4.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        img5.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        img6.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

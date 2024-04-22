@@ -1,0 +1,414 @@
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 7.5px;
+}
+
+section a:link {
+    color: #bd5719;
+    padding-left: 2vw;
+}
+
+section a:visited {
+    color: #fcc852;
+}
+
+a:active {
+    font-weight: 600;
+}
+
+p {
+    margin-top: 6vw;
+    font-size: 1.5vw;
+}
+
+h1 {
+    margin-top: 2vw;
+    font-family: 'STIX Two Text', serif;
+    text-align: center;
+    font-size: 3vw;
+    color: black;
+    font-family: "Comica BD", fantasy, sans-serif;
+}
+
+h1 a:hover {
+    color: rgba(255, 206, 0);
+}
+
+h2 {
+    margin: 1vw;
+    padding-top: 1vw;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+p, h3 {
+    margin-top: 0.5vw;
+    margin-bottom: -0.5vw;
+    font-size: 1.5vw;
+}
+
+p {
+    text-align: center;
+}
+
+nav a {
+    color: blue;
+    font-family: 'Big Shoulders Display', fantasy;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgba(255, 206, 0);
+    font-size: 1.5vw;
+}    
+
+nav li:hover {
+    text-decoration: underline;
+    color: rgba(255, 206, 0);
+    font-size: 1.5vw;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgba(255, 206, 0);
+    font-size: 1.5vw;
+}
+
+
+.email {
+    font-size: 1.75vw;
+    font-family: 'Big Shoulders Display', fantasy;
+}
+
+
+.email:hover {
+    font-size: 1.75vw;
+    font-family: 'Big Shoulders Display', fantasy;
+    color: rgba(255, 206, 0);
+}
+
+main {
+    padding-top: 1vw;   
+}
+
+main div {
+    padding-bottom: 1vw;   
+}
+
+header {
+    padding-bottom: 1vw;   
+}
+
+footer {
+    clear: left;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-align: center;
+}
+
+
+
+hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+    background: rgba(29, 106, 154, 0.72);
+    border-radius: 7.5px;
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+    overflow: hidden;
+}
+
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+
+
+
+/* About Me page specifics */
+
+.aboutMe {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 20vw;
+}
+
+.contactMe {
+    font-weight: bold;
+    margin: 1.5vw 20vw 0 20vw;
+}
+
+
+
+
+/* Media screens for responsive design */
+
+@media screen and (max-width: 558px) {
+    .col-1-mobile {
+        width: 8.33%;
+    }
+
+    .col-2-mobile {
+        width: 16.66%;
+    }
+
+    .col-3-mobile {
+        width: 25%;
+    }
+
+    .col-4-mobile {
+        width: 33.33%;
+    }
+
+    .col-5-mobile {
+        width: 41.66%;
+    }
+
+    .col-6-mobile {
+        width: 50%;
+    }
+
+    .col-7-mobile {
+        width: 58.33%;
+    }
+
+    .col-8-mobile {
+        width: 66.66%;
+    }
+
+    .col-9-mobile {
+        width: 75%;
+    }
+
+    .col-10-mobile {
+        width: 83.33%;
+    }
+
+    .col-11-mobile {
+        width: 91.66%;
+    }
+
+    .col-12-mobile {
+        width: 100%;
+    }
+    
+    [class*="col-"] {
+        float: left;
+        padding: 3.5px;
+        padding-bottom: 1vw;
+    }
+    
+    .display {
+        display: inline-block;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+   nav a {
+        color: blue;
+        font-family: 'Big Shoulders Display', fantasy;
+        font-size: 2.5vw;
+    }
+    
+    .email {
+        font-size: 2.75vw;
+    }
+}
+
+@media screen and (min-width: 558px) and (max-width: 770px) {
+    .col-1-tablet {
+        width: 8.33%;
+    }
+
+    .col-2-tablet {
+        width: 16.66%;
+    }
+
+    .col-3-tablet {
+        width: 25%;
+    }
+
+    .col-4-tablet {
+        width: 33.33%;
+    }
+
+    .col-5-tablet {
+        width: 41.66%;
+    }
+
+    .col-6-tablet {
+        width: 50%;
+    }
+
+    .col-7-tablet {
+        width: 58.33%;
+    }
+
+    .col-8-tablet {
+        width: 66.66%;
+    }
+
+    .col-9-tablet {
+        width: 75%;
+    }
+
+    .col-10-tablet {
+        width: 83.33%;
+    }
+
+    .col-11-tablet {
+        width: 91.66%;
+    }
+
+    .col-12-tablet {
+        width: 100%;
+    }
+    
+    [class*="col-"] {
+        float: left;
+        padding: 3.5px;
+    }
+    
+    .display {
+        display: inline-block;
+        max-width: 50%;
+        text-align: center;
+    }
+    
+   nav a {
+        color: blue;
+        font-family: 'Big Shoulders Display', fantasy;
+        font-size: 2.5vw;
+
+    }
+    
+    .email {
+        font-size: 2.75vw;
+    }
+}
+
+@media screen and (min-width: 771px) {
+    .col-1-desktop {
+        width: 8.33%;
+    }
+
+    .col-2-desktop {
+        width: 16.66%;
+    }
+
+    .col-3-desktop {
+        width: 25%;
+    }
+
+    .col-4-desktop {
+        width: 33.33%;
+    }
+
+    .col-5-desktop {
+        width: 41.66%;
+    }
+
+    .col-6-desktop {
+        width: 50%;
+    }
+
+    .col-7-desktop {
+        width: 58.33%;
+    }
+
+    .col-8-desktop {
+        width: 66.66%;
+    }
+
+    .col-9-desktop {
+        width: 75%;
+    }
+
+    .col-10-desktop {
+        width: 83.33%;
+    }
+
+    .col-11-desktop {
+        width: 91.66%;
+    }
+
+    .col-12-desktop {
+        width: 100%;
+    }
+    
+    [class*="col-"] {
+        float: left;
+        padding: 3.5px;
+    }
+    
+    .display {
+        display: inline-block;
+        max-width: 20%;
+        text-align: center;
+    }
+    
+    nav a {
+        color: blue;
+        font-family: 'Big Shoulders Display', fantasy;
+        font-size: 0.01vw;
+         -ms-transform: translateY(-1035%);
+            -webkit-transform: translateY(-1035%);
+                    transform: translateY(-1035%);
+    }
+}
