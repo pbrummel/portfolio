@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Estimate Cost</title>
+        <script src="estimateCost.js" charset="utf-8"></script>
+        <style>
+            div {
+                margin: 2em 0 0 3em;
+            }
+            .estimate {
+                text-align: center;
+                font-size: 1.5em;
+                margin-bottom: 1.5em;
+            }
+            h1 {
+              text-align: center;
+              font-family: Arial;
+            }
+            #howMuch {
+              font-family: Times, "Times New Roman";
+              text-align: center;
+              margin: 2em;
+              text-decoration: underline;
+            }
+            #printHR {
+              width: 475px;
+              margin: 0 auto;
+            }
+            ul {
+                text-align: center;
+                display: inline-block;
+            }
+            li {
+              list-style: none;
+              padding-left: 0px;
+              font-weight: normal;
+              text-align: left;
+
+              font-family: Arial;
+            }
+            h2 {
+                margin-left: 150px;
+                margin-top: 2em;
+                margin-right: .5em;
+                margin-bottom: 0;
+                margin-left: 150px;
+                display: inline;
+            }
+            hr {
+                margin: 2.5em;
+            }
+            .clear {
+                text-align: center;
+                padding: 0 40px;
+            }
+            .homes {
+                text-align: center;
+            }
+            .colors {
+                text-align: center;
+            }
+            .materials {
+                text-align: center;
+            }
+            #footer {
+                text-align: center;
+                margin: 4em 3em;
+            }
+            input[type="radio"] {
+                margin: 0 5px 0 230px;
+                width: 1.5em;
+                height: 1.5em;
+            }
+            input[type="text"] {
+                display: inline;
+                font-size: larger;
+            }
+
+            input[type="image"]:hover {
+                border: 5px solid #83d9f4;
+            }
+            input[type="image"]:focus {
+                border: 5px solid #83d9f4;
+            }
+            input[type="color"] {
+                height: 2.5em;
+                width: 6em;
+                margin-left: .75em;
+            }
+            button[type="button"] {
+                font-size: larger;
+            }
+            #single {
+                margin-left: 0;
+            }
+            label {
+                font-size: 2em;
+            }
+            select {
+                font-size: .80em;
+                position: relative;
+                left: -150px;
+            }
+            button[type="button"] {
+                height: 3em;
+                width: 16em;
+                font: bold 16px Arial, sans-serif;
+                background: #4398af;
+                color: white;
+                border-style: outset;
+                border-color: #045686;
+                border-radius: 10px;
+            }
+            button[type="button"]:hover {
+                background: #305b04;
+                color: #86c040;
+                cursor: pointer;
+            }
+            p {
+                text-align: center;
+                font-size: 1.5em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="howMuch">How Much Does It Cost to Build a House?</h1>
+        <h2>Single story or Two story?</h2>
+        <div class="homes">
+            <img src="single.png" alt="picture of single story house">
+            <img src="double.png" alt="picture of double story house">
+        </div>
+        <div class="clear" id="storyID">
+            <input id="single" type="radio" name="Stories" value="Single"/></input>
+            <label for="single">Single Story</label>
+            <input id="double" type="radio" name="Stories" value="Double"/></input>
+            <label for="double">Two Story</label>
+        </div>
+        <hr />
+
+        <h2>Color:</h2>
+        <div class="colors">
+          <label for="colorSelection">What color do you want your house to be? (click and choose)</label>
+          <input type="color" id="colorSelection" name="color" value="#ff0000">
+        </div>
+        <hr />
+
+        <h2>Exterior Material:</h2>
+        <div class="materials" id="materialSelection">
+            <input type="image" id="brick" onclick="selectBrick(this.id)" value="brick" src="brick.png">
+            <input type="image" id="stucco" onclick="selectStucco(this.id)" value="stucco" src="stucco.png">
+            <input type="image" id="stone" onclick="selectStone(this.id)" value="stone" src="stone.png">
+            <input type="image" id="vinyl" onclick="selectVinyl(this.id)" value="vinyl" src="vinyl.png">
+            <input type="image" id="wood" onclick="selectWood(this.id)" value="wood" src="wood.png">
+        </div>
+        <p id="currentOutput">Current selection:</p>
+        <hr />
+
+        <div id="footer">
+        <h2>Square Footage:</h2>
+        <input type="text" id="sqft" name="sqft" value="" placeholder="Enter square footage">
+
+        <h2>Garage Size (# of vehicles):<h2>
+            <select id="garage">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+        </div>
+
+        <div class="estimate">
+            <button type="button" onclick="getEstimate()">Get Detailed Estimate</button>
+        </div>
+        <div id="result"></div>
+    </body>
+</html>

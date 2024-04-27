@@ -1,0 +1,116 @@
+div {
+    margin: 2em 0 0 3em;
+}
+.estimate {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+h1 {
+  text-align: center;
+  font-family: Arial;
+}
+#howMuch {
+  font-family: Times, "Times New Roman";
+  text-align: center;
+  margin: 2em;
+  text-decoration: underline;
+}
+#printHR {
+  width: 475px;
+  margin: 0 auto;
+}
+ul {
+    text-align: center;
+    display: inline-block;
+}
+li {
+  list-style: none;
+  padding-left: 0px;
+  font-weight: normal;
+  text-align: left;
+
+  font-family: Arial;
+}
+h2 {
+    margin-left: 150px;
+    margin-top: 2em;
+    margin-right: .5em;
+    margin-bottom: 0;
+    margin-left: 150px;
+    display: inline;
+}
+hr {
+    margin: 2.5em;
+}
+.clear {
+    text-align: center;
+    padding: 0 40px;
+}
+.homes {
+    text-align: center;
+}
+.colors {
+    text-align: center;
+}
+.materials {
+    text-align: center;
+}
+#footer {
+    text-align: center;
+    margin: 4em 3em;
+}
+input[type="radio"] {
+    margin: 0 5px 0 230px;
+    width: 1.5em;
+    height: 1.5em;
+}
+input[type="text"] {
+    display: inline;
+    font-size: larger;
+}
+
+input[type="image"]:hover {
+    border: 5px solid #83d9f4;
+}
+input[type="image"]:focus {
+    border: 5px solid #83d9f4;
+}
+input[type="color"] {
+    height: 2.5em;
+    width: 6em;
+    margin-left: .75em;
+}
+button[type="button"] {
+    font-size: larger;
+}
+#single {
+    margin-left: 0;
+}
+label {
+    font-size: 2em;
+}
+select {
+    font-size: .80em;
+    position: relative;
+    left: -150px;
+}
+button[type="button"] {
+    height: 3em;
+    width: 16em;
+    font: bold 16px Arial, sans-serif;
+    background: #4398af;
+    color: white;
+    border-style: outset;
+    border-color: #045686;
+    border-radius: 10px;
+}
+button[type="button"]:hover {
+    background: #305b04;
+    color: #86c040;
+    cursor: pointer;
+}
+p {
+    text-align: center;
+    font-size: 1.5em;
+}
