@@ -1,0 +1,94 @@
+/*
+    Name: Peter Brummel
+    Today's date: 12/08/2019
+*/
+
+body {
+    background-color: #cd3e30;
+}
+
+label {
+    display: block;
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
+textarea {
+    margin-bottom: 1.5em;
+    width: 50%;
+    height: 5em;
+}
+
+form img {
+    float: right;
+}
+
+form {
+    background-color: maroon;
+    border: 3px solid gold;
+    border-radius: 15px;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    color: white;
+}
+
+label {
+    margin-top: 1.5em;
+}
+
+
+h1 {
+    font-size: 3em;
+    font-family: "Baskerville Old Face", "Bookman Old Style", "18th Century", "Times New Roman", Times;
+}
+
+h2 {
+    font-family: "Baskerville Old Face", "Bookman Old Style", "18th Century", "Times New Roman", Times;
+    text-align: center;
+}
+
+p {
+    font-family: "Baskerville Old Face", "Bookman Old Style", "18th Century", "Times New Roman", Times;
+}
+
+#Yes, #No {
+    margin-bottom: 2em;
+    margin-left: 2.5em;
+}
+
+fieldset {
+    margin-bottom: 1.75em;
+    width: 185px;
+}
+
+section {
+    margin-left: 1em;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, fieldset {
+    margin-left: 0.75em;
+}
+
+input[type="radio"] {
+    margin-top: 1.5em;
+}
+
+input[type="reset"] {
+   margin-left: 0.5em;
+   border-radius: 3px;
+}
+
+input[type="reset"]:hover {
+    background-color: gold;
+}
+
+input[type="submit"] {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: gold;
+}

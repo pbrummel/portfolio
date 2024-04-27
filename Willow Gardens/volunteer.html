@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Fill out the form and request your own plot of garden at Willow!">
+  <title>Apply to Buy a Plot</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+</head>
+
+<body>
+<a href="#mainVolunteer" class="skipNavigation">Skip to Main</a>
+<div class="container">
+
+  <header class="pt-3 pb-3">
+    <img class="mx-auto d-block headerImage" src="images/welcome4.png" alt="Welcome to Willow Community Gardens">
+  </header>
+
+  <nav class="navbar navbar-expand-md">
+      <button type="button" class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item active font-weight-bold"><a class="nav-link" href=index.html>Home</a></li>
+          <li><a class="nav-item nav-link font-weight-bold" href=buyPlot.html>Apply for a plot</a></li>
+          <div class="dropdown show nav-item nav-link font-weight-bold">
+               <a class="dropdown-toggle" href="#" id="dropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved</a>
+                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
+                   <a class="dropdown-item" href="volunteer.html">Volunteer</a>
+                   <a class="dropdown-item" href="#">Give</a>
+                   <a class="dropdown-item" href="#">Events</a>
+                   <a class="dropdown-item" href="#">Internships</a>
+                   <a class="dropdown-item" href="#">Employment</a>
+                 </div>
+          </div>
+          <div class="dropdown show nav-item nav-link font-weight-bold">
+               <a class="dropdown-toggle" href="#" id="dropdownMenuLink8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">For the Kids</a>
+                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink8">
+                   <a class="dropdown-item" href="#">Kids Gardens</a>
+                    <a class="dropdown-item" href="#">Field Trips & Tours</a>
+                   <a class="dropdown-item" href="images/sample garden from badgerprairegarden.org.png" target="_blank">Curriculum, Guides, & Manuals</a>
+                 </div>
+          </div>
+          <div class="dropdown show nav-item nav-link font-weight-bold">
+               <a class="dropdown-toggle" href="#" id="dropdownMenuLink9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Learn</a>
+                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink9">
+                   <a class="dropdown-item" href="gardeningTips.html">Gardening Tips</a>
+                   <a class="dropdown-item" href="images/sample garden from badgerprairegarden.org.png" target="_blank">Garden Map</a>
+                   <a class="dropdown-item" href="#">Garden Rules</a>
+                   <a class="dropdown-item" href="#">Workshops</a>
+                   <a class="dropdown-item" href="#">Newsletters</a>
+                   <a class="dropdown-item" href="#">FAQs</a>
+                 </div>
+          </div>
+          <li><a class="nav-item nav-link font-weight-bold" href="mailto:pbrummel@madisoncollege.edu">Contact</a></li>
+        </ul>
+      </div>
+  </nav>
+
+<br/>
+<main id="mainVolunteer" tabindex="-1">
+
+    <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+
+        <h1 class="text-center font-weight-bold text-dark">Join a Garden Team!</h1>
+        <br/>
+        <img class="img-fluid rounded plotImage mx-auto d-block" src="images/volunteer.png"  alt="a group of young adults volunteering">
+        <p class="text-dark"><big>Teams are a great way to get to know other gardeners and volunteer on your own schedule. You will not be asked
+          to work more than your required volunteer hours due. Check the box for each team you are interested in, and we will email you more information.</big></p>
+        <fieldset>
+          <legend class="text-dark text-center">Volunteer Teams @ Willow Gardens</legend>
+          <big>
+          <input id="mentorID" type="checkbox" class="offset-3 mt-3" name="mentor" aria-label="New Garden Mentor">
+          <label for="mentorID" class="font-weight-bold text-dark ml-1" aria-label="New Garden Mentor">New Garden Mentor</label>
+          <br>
+          <input id="plotID" type="checkbox" class="offset-3" name="plot" id="plot" aria-label="Plot Maintenance">
+          <label for="plotID" class="font-weight-bold text-dark ml-1" aria-label="Plot Maintenance">Plot Maintenance </label>
+          <br>
+          <input id="waterID" type="checkbox" class="offset-3" name="water" id="water" aria-label="Water Maintenance">
+          <label for="waterID" class="font-weight-bold text-dark ml-1" aria-label="Water Maintenance">Water Maintenance </label>
+          <br>
+          <input id="equipmentID" type="checkbox" class="offset-3" name="equipment" id="equipment" aria-label="Equipment Maintenance">
+          <label for="equipmentID" class="font-weight-bold text-dark ml-1" aria-label="Equipment Maintenance">Equipment Maintenance </label>
+          </big>
+        </fieldset>
+        <div id="volunteerForm" class="col-12">
+            <div class="form-group required mt-4 justify-content-center row">
+                <label for="emailAddressID" class="font-weight-bold col-12 text-center text-dark"><big>Email Address:</big></label>
+                <br/><input id="emailAddressID" type="email" name="email" class="form-control input-lg col-6 input-lg" placeholder="example@email.com"
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="email input" title="Email is required" required>
+            </div>
+        </div>
+
+        <br>
+
+        <button type="submit" class="bg-success border-success mx-auto d-block text-white font-weight-bold btn-lg border-top-0 border-left-0 border-dark">Submit</button>
+
+    </form>
+</main>
+<br/>
+
+<footer class="container-fluid">
+  <img class="mx-auto d-block mb-1" alt="Willow Community Gardens" src="images/smaller.png">
+  <p class="text-center green">(608) 246-6100
+  <br/>1701 Wright St
+  <br/>Madison, WI 53704
+  <br/><a href="mailto:pbrummel@madisoncollege.edu">Contact Us</a>
+  <br/><span class="text-dark">Web design by </span><a target="_blank" href="https://www.peterbrummel.com/">Peter Brummel</a><span class="text-dark">, 2020</p></span>
+</footer>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

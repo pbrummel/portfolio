@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+    Author: Peter Brummel
+    Date: 12/08/2019
+-->
+<html lang="en">
+
+<head>
+    <title>Book Club</title>
+    <meta charset="UTF-8"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSheets/main.css">
+    <link rel="stylesheet" href="styleSheets/club.css">
+</head>
+
+<body>
+
+    <header>
+      <h1>Experience the rewards of our book club membership!</h1>
+
+      <nav>
+        <a href="index.html">Home Page</a> &bull;
+        <a href="collection.html">Our Collection</a> &bull;
+        <a href="club.html">Become a member</a> &bull;
+        <a href="contact.html">Send us an Owl</a> &bull;
+        <a href="quidditch.html">Quidditch schedule</a>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Book Club Member Subscription</h2>
+        <p>Looking for more ways to cut your costs or make your transition to school even easier?
+          <br>Become a Hogwarts Underground Book Club Member and start saving today!</p>
+
+        <img id="stack" src="images/bookstack.png" alt="picture of book stack">
+
+        <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+          <label for="fullNameID">Full Name:</label>
+          <input type="text" id="fullNameID" name="fullName" required>
+          <label for="emailID">Email:</label>
+          <input type="email" id="emailID" name="email" required>
+          <label for="passwordID">Password (min. 8 chars, max. 25 chars):</label>
+          <input type="password" id="passwordID" minlength="8" maxlength="25" name="password" required>
+          <label>How did you hear about us?</label>
+           <select name="reference">
+               <option value="none">--Select an option--</option>
+               <option value="wizard">Wizard</option>
+               <option value="witch">Witch</option>
+               <option value="muggle">Muggle</option>
+               <option value="other">Other</option>
+           </select>
+
+           <fieldset id="fieldBox">
+             <legend>What kind of information would you like us to send you? (Check all that apply)</legend>
+
+             <div>
+               <input id="deals" type="checkbox" name="info" value="Promotions">
+               <label for="deals">Deals and Promotions</label>
+               <input id="Blueberry" type="checkbox" name="info" value="Reqs">
+               <label for="Blueberry">Lists of Required Books</label>
+               <input id="Custard" type="checkbox" name="info" value="Spells">
+               <label for="Custard">Random Spells</label>
+               <input id="Raspberry" type="checkbox" name="info" value="Events">
+               <label for="Raspberry">Store Events</label>
+             </div>
+
+           </fieldset>
+
+           <fieldset id="fieldRadio">
+             <legend>Is it okay for us to send you an owl?</legend>
+
+             <div>
+               <input id="Okay" type="radio" name="owl" value="Yes">
+               <label for="Okay" class="radio" >Yes</label>
+               <input id="NotOkay" type="radio" name="owl" value="No">
+               <label for="NotOkay" class="radio">No</label>
+             </div>
+
+           </fieldset>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <address>
+        <p>Site developed by:
+        <a href="mailto:pbrummel@madisoncollege.edu">pbrummel@madisoncollege.edu
+        </a></p>
+      </address>
+    </footer>
+
+</body>
+
+</html>

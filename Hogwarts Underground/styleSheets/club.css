@@ -1,0 +1,140 @@
+/*
+    Name: Peter Brummel
+    Today's date: 12/08/2019
+*/
+
+body {
+    background-color: #cd3e30;
+}
+
+label {
+    display: block;
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
+textarea {
+    margin-bottom: 1.5em;
+    width: 50%;
+    height: 5em;
+}
+
+div {
+    margin-top: 1.5em;
+}
+
+img {
+    max-height: 300px;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: "Baskerville Old Face", "Bookman Old Style", "18th Century", "Times New Roman", Times;
+    color: white;
+}
+
+h2 {
+    font-family: "Baskerville Old Face", "Bookman Old Style", "18th Century", "Times New Roman", Times;
+    color: white;
+}
+
+p {
+    font-family: "Baskerville Old Face", "Bookman Old Style", "18th Century", "Times New Roman", Times;
+    color: white;
+    font-size: 1.25em;
+}
+
+main h2, p {
+    text-align: center;
+}
+
+#stack {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  display: block;
+}
+
+form {
+    background-color: maroon;
+    border: 3px solid gold;
+    border-radius: 15px;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    color: white;
+}
+
+input, text, select {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+textarea {
+    width: 100%;
+    height: 65px;
+    margin-bottom: 1em;
+}
+
+#fieldBox {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 550px;
+}
+
+#fieldRadio {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 200px;
+}
+
+fieldset label {
+    display: inline-block;
+    width: 50px;
+    padding-left: 0.25em;
+    position: relative;
+}
+
+input[type="submit"] {
+    height: 40px;
+    width: 80px;
+    font: bold 13px Arial, sans-serif;
+    background: white;
+    color: black;
+    border-style: outset;
+    border-color: gold;
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-left: 2.5em;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background: gold;
+    color: maroon;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-left: 2em;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+}
+
+input[type="radio"] {
+    margin-left: 1em;
+    padding-left: 0;
+}
+
+.radio {
+     padding-left: 0;
+     margin-left: 0;
+     margin-bottom: 2em;
+}
+
+#Okay {
+    margin-left: 2.5em;
+}

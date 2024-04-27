@@ -1,0 +1,241 @@
+/**************
+Color Scheme:
+
+
+**************/
+
+html, body {
+  height: 100%;
+
+}
+
+/*******************************
+  Navigation
+*******************************/
+nav {
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 2em;
+}
+
+/*******************************
+  Links
+*******************************/
+nav ul li a:link {
+  color: #0048CF;
+}
+
+.lightHover:hover {
+  color: #C1C7DF;
+}
+
+p a:link {
+  color: #0048CF;
+}
+
+p a:hover {
+  color: #0B5C16;
+}
+
+.skipNavigation {
+  position: absolute;
+  left: -1000px;
+}
+
+.skipNavigation:focus, .skipNavigation:active {
+    left: 0;
+}
+
+
+/*******************************
+  Button
+*******************************/
+
+.btn-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-container a:link {
+  border: 5px groove #ff0073;
+  color: #fff;
+  padding: .7em;
+  font-size: 1.5em;
+}
+
+.btn-container a:hover {
+  background-color: #0048CF;
+}
+
+
+/*******************************
+  Headings
+*******************************/
+h1 {
+  text-align: center;
+  color: #00653A;
+}
+
+/*******************************
+  Main Content
+*******************************/
+p {
+  font-weight: bold;
+  text-align: justify;
+}
+
+blockquote {
+  font-size: 1.3em;
+  font-style: italic;
+  color: #68d376;
+  padding: 0 1em;
+  clear: both;
+}
+
+/*******************************
+  Images
+*******************************/
+img#food {
+  float: right;
+}
+
+
+/*******************************
+  Form
+*******************************/
+form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #a0f367;
+  padding: 2em;
+  color: white;
+}
+
+/*******************************
+  Additional CSS added in
+*******************************/
+
+body {
+	  background-color: white;
+    font-family: 'Merriweather';
+}
+
+.container {
+    background-color: #d2fc96;
+}
+
+.navbar {
+    background-color: #a0f367;
+    clear: both;
+}
+
+footer {
+    background-color: #a0f367;
+    padding-bottom: 1em;
+}
+
+header {
+    padding: 2em 0;
+}
+
+main p {
+    padding: 1em;
+    color: #2c611c;
+}
+
+.green {
+    color: #2c611c;
+}
+
+.greener {
+  color: #1D6500
+}
+
+.mainImage{
+  padding: 0 1.5em;
+}
+
+.headerImage {
+    max-width: 100%;
+
+}
+
+#carouselSlides {
+  padding: 0 1.5em;
+  margin-top: 0 1.5em;
+  float: right;
+}
+
+.plotImage {
+  padding-bottom: 1.5em;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+footer img {
+    padding-top: 1em;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.brown {
+    color: #745F43;
+}
+
+ol li {
+  margin-top: 1.5em;
+}
+
+.opacity {
+  opacity: .8;
+}
+
+.navbar a:hover {
+  text-shadow: 0px 0px 12px #0677D4;
+}
+
+.dropdown-menu a:hover {
+  background-color: #5cb85c;
+}
+
+.border-top-0, .border-left-0 {
+  border-width: 2px;
+}
+
+fieldset {
+  border: 1px groove #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+input::placeholder {
+  color: #767676;
+}
+
+.lightgreen {
+  background-color: #a0f367;
+}
+
+td:hover {
+  background-color: #5cb85c;
+}
+
+td:focus {
+  background-color: #5cb85c;
+}
