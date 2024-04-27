@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather Finder</title>
+    <style>
+        button[type="button"] {
+            height: 1.75em;
+            width: 11em;
+            font: bold 16px Arial, sans-serif;
+            background: #4398af;
+            color: white;
+            border-style: outset;
+            border-color: #045686;
+            border-radius: 10px;
+            margin-top: 1.5em;
+        }
+
+        button[type="button"]:hover {
+            background: #305b04;
+            color: #86c040;
+            cursor: pointer;
+        }
+
+        input[type="button"]:focus {
+            border: 7.5px solid #83d9f4;
+        }
+
+
+        h1 {
+            margin: 1.5em;
+        }
+
+        h2 {
+            margin: 1.5em;
+        }
+
+        hr {
+            width: 335px;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+
+        body {
+            text-align: center;
+        }
+    </style>
+    <script src="weatherFinder.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <br/>
+    Zip: <input type="text" id="zip">
+    <br/><button type="button" id="getWeather">Get Weather</button>
+
+    <div id="output"></div>
+
+  </body>
+</html>
