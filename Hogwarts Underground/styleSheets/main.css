@@ -1,0 +1,55 @@
+/*
+    Name: Peter Brummel
+    Today's date: 12/08/2019
+*/
+body {
+    background-color: #cd3e30;
+}
+
+header {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+a:link {
+    text-decoration: none;
+    font-family: "Magic School Two";
+    font-size: 2.25em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+nav {
+    font-size: 0.75em;
+}
+
+footer {
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: 0.50em;
+}
+
+footer a:link {
+    font-family: "18th Century", "Times New Roman", "Bookman Old Style", Times;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 40em) {
+    footer  {
+        font-size: smaller;
+    }
+
+    footer a:link {
+        margin-top: 2em;
+        font-size: 1.25em;
+        max-width: 40%;
+    }
+
+}

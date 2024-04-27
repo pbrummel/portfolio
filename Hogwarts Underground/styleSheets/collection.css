@@ -1,0 +1,103 @@
+/*
+    Name: Peter Brummel
+    Today's date: 12/08/2019
+*/
+
+main .right {
+    text-align: right;
+}
+
+#newt, #trans {
+    float: left;
+    margin-left: 2em;
+}
+
+#monster {
+    float: right;
+    margin-right: 2em;
+}
+
+#newt, #monster, #trans, #cheese {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#cheese {
+    margin-right: 2em;
+}
+
+body {
+    background-color: #cd3e30;
+}
+
+article {
+    margin-bottom: 5em;
+    clear: both;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: "Baskerville Old Face", "Bookman Old Style", "18th Century", "Times New Roman", Times;
+}
+
+#backToTop {
+    text-align: right;
+    display: block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    font-size: 1.75em;
+}
+
+.excerpt1 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    background: linear-gradient(#ededed, #979797);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Bookman Old Style";
+}
+
+.magic {
+    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-family: "Bookman Old Style", "Bookman Old Style", "18th Century", "Times New Roman", Times;
+    color: #CAF0BB;
+}
+
+h5 {
+    font-size: 1.25em;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-family: "Bookman Old Style", "Bookman Old Style", "18th Century", "Times New Roman", Times;
+    color: #37FA37;
+}
+
+p, blockquote {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    font-size: larger;
+}
+
+#bookLinks {
+    text-align: center;
+    font-size: 0.75em;
+}
+
+p a:link {
+    font-family: "Baskerville Old Face", "Bookman Old Style", "18th Century", "Times New Roman", Times;
+    font-size: 1.75em;
+    margin-right: .2em;
+    margin-left: .2em;
+}

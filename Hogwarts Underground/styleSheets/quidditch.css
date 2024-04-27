@@ -1,0 +1,52 @@
+/*
+    Name: Peter Brummel
+    Today's date: 12/15/2019
+*/
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+table {
+  padding-bottom: 2em;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2em;
+  font-family: "Bookman Old Style", "18th Century", "Times New Roman", Times;
+}
+
+th {
+  color: #EBDC0C;
+  padding: 1em;
+}
+
+td {
+  border: 2px dotted #EBDC0C;
+  padding: 2em;
+  background-color: maroon;
+  color: gold;
+}
+
+#broom {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+}
+
+footer p {
+    color: white;
+    font-size: 2em;
+}
+
+footer a:link {
+    font-size: larger;
+}
+
+nav {
+    color: white;
+}
