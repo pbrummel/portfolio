@@ -1,0 +1,576 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* 
+Overall Design
+*/
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+input[type=button] {
+    font-family: 'Open Sans', sans-serif;    
+}
+
+section {
+    margin: 0;
+}
+
+
+/* 
+Nav section
+*/
+
+.container2 {
+    position: relative;   
+}
+
+nav {
+    left: 0;
+    position: fixed;
+    text-align: right;
+    width: 100%;
+}
+
+hr {
+    background-color: #F0DEB4;
+    height: 0.6vw;
+    margin: 0;
+    -ms-transform: translateY(400%);
+    -webkit-transform: translateY(330%);
+            transform: translateY(330%);
+}
+
+nav a {
+    font-family: 'Big Shoulders Display', fantasy;
+    color: black;
+    font-size: 2.75vw;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 3vw;
+    -ms-transform: translateX(-10.5%);
+    -webkit-transform: translateY(-10.5%);
+            transform: translateY(-10.5%);
+    clear: left;
+    width: 40%
+}
+
+nav a:hover {
+    color: white;
+}
+
+#navbar {
+    width: 100%;    
+    height: auto;
+    position: fixed;
+}
+
+.navImage {
+    width: 24%;
+    height: auto;
+    margin: 0;
+    padding-left: 2.10vw;
+    padding-top: 1.5vw;
+    float: left;
+}
+
+
+/*
+Header section (remainder)
+*/
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+}
+
+.container2 { 
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 47vw;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    header {
+        height: 52.80vw;
+    }
+}
+
+.hero img {
+    display: block;
+}
+
+h1 {
+    font-family: 'Lemon', fantasy;
+    font-size: 7vw;
+    color: #F8F7F6;
+    -webkit-text-stroke: 0.25px #82B2E0;
+    text-shadow: -18px 12px 5px #000000;
+    margin-top: 12.25vw;
+}
+
+header input[type=button]:hover {
+    background-color:rgba(255,204,0,0.8);
+}
+
+@media screen and (min-width: 0px) {
+    .vertical-center2 {
+        -ms-transform: translateY(-190%);
+        -webkit-transform: translateY(-190%);
+                transform: translateY(-190%);
+    }
+    
+    header h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+        font-weight: 600;
+        font-style: italic;
+        color: #F14441;
+        text-shadow: -1px 2px 1px #FBFBFB;
+        padding-bottom: 1vw;
+        padding-top: 1vw;
+         -ms-transform: translateY(50%);
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+    }
+
+    header input[type=button] {
+        background-color: #6BC5F3;
+        background: rgba(107, 197, 243, 0.8);
+        color: white;
+        font-weight: bold;
+        word-break: break-word;
+        font-size: 1.5vw;
+        max-width: 75%;
+        border: 3px solid white;
+        border-radius: 7.5px;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .vertical-center2 {
+        -ms-transform: translateY(-215%);
+        -webkit-transform: translateY(-215%);
+                transform: translateY(-215%);
+    }
+    
+    header h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+        font-weight: 600;
+        font-style: italic;
+        color: #F14441;
+        text-shadow: -1px 2px 1px #FBFBFB;
+        padding-bottom: 1vw;
+        padding-top: 1vw;
+         -ms-transform: translateY(-60%);
+        -webkit-transform: translateY(-60%);
+                transform: translateY(-60%);
+    }
+    
+    header input[type=button] {
+        background-color: #6BC5F3;
+        background: rgba(107, 197, 243, 0.8);
+        color: white;
+        font-weight: bold;
+        word-break: break-word;
+        font-size: 1.5vw;
+        max-width: 75%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 54px;
+        padding-right: 54px;
+        border: 3px solid white;
+        border-radius: 7.5px;
+        text-decoration: none;
+        font-family: sans-serif;
+        top: 50%;
+        -ms-transform: translateY(250%);
+        -webkit-transform: translateY(250%);
+                transform: translateY(250%);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .vertical-center2 {
+        -ms-transform: translateY(-214%);
+        -webkit-transform: translateY(-214%);
+                transform: translateY(-214%);
+    }
+
+    header h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+        font-weight: 600;
+        font-style: italic;
+        color: #F14441;
+        text-shadow: -1px 2px 1px #FBFBFB;
+        padding-bottom: 1vw;
+        padding-top: 1vw;
+         -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-60%);
+                transform: translateY(-60%);
+    }
+
+    header input[type=button] {
+        background-color: #6BC5F3;
+        background: rgba(107, 197, 243, 0.8);
+        color: white;
+        font-weight: bold;
+        word-break: break-word;
+        font-size: 1.6vw;
+        max-width: 75%;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        padding-left: 96px;
+        padding-right: 96px;
+        border: 5px solid white;
+        border-radius: 15px;
+        text-decoration: none;
+        font-family: sans-serif;
+        margin-top: 1vw;
+        -ms-transform: translateY(415%);
+        -webkit-transform: translateY(300%);
+                transform: translateY(300%);
+    }
+}
+
+
+/*
+Our Boats section
+*/
+
+.ourBoatsSection {
+    background-image: url(../images/ourBoatsBG.jpg);
+    background-size: cover;
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+    width: 100%;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.ourBoatsSection div {
+    border: 2.5px solid #53452B;
+    border-radius: 50px;
+    height: 22vw;
+    width: auto;
+    padding: 0.33em 1.67em;
+    background-color: rgb(253,209,125, 0.75);
+    overflow: hidden;
+}
+
+.leftAlignment {
+    margin: 0.1vw 0.8vw;
+}
+
+.middleAlignment {
+    margin: 3vw 0;
+}
+
+.rightAlignment {
+    margin: 1.75vw 0.8vw;
+}
+
+.ourBoatsSection img {
+    width: 75%;
+}
+
+.ourBoatsSection article {
+    text-align: center;
+    width: 27%;
+    height: auto;
+    float: left;
+    padding: 1vw;
+    margin-left: 3.967%;
+}
+
+.ourBoatsSection h3 {
+    font-family: 'Cookie', cursive;
+    font-size: 3.5vw; 
+    font-weight: normal;
+    color: #53452B;
+    text-shadow: 3px 3px 9px rgb(0, 0, 0, 0.5);
+    margin: 0;
+    padding-top: 0.5vw;
+    
+}
+
+.ourBoatsSection p {
+    font-family: 'Kurale', serif;
+    font-size: 1.5vw;
+    font-weight: normal;
+    color: #53452B;
+    vertical-align: middle;
+}
+
+.clear {
+    clear:left;
+}
+
+
+/*
+COVID-Safety section
+*/
+
+.covidSafetySection {
+    background-image: url("../images/covid19Background.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    padding-top: 2.5vw;
+    padding-bottom: 5vw;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.safetyImage {
+    float: left;
+    width: 45%;
+    height: auto;
+    margin-left: 3.5vw;
+    margin-top: 4.5vw;
+}
+
+.safetyText {
+    float: left;
+    width: 45%;
+    margin-left: 2vw;
+    margin-top: 4.3vw;
+}
+
+#covidSafety h3, p, ul {
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 5px;
+}
+
+#covidSafety p, h3, li {
+    margin-top: 1.5vw;
+}
+
+#covidSafety h3 {
+    font-family: 'Big Shoulders Display', fantasy;
+    font-size: 3vw;
+    font-weight: normal;
+    text-shadow: -2px 3px 5px #000000;
+}
+
+#covidSafety p {
+    font-family: 'Big Shoulders Display', fantasy;
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: -1px 3px 7px #000000;
+}
+
+#covidSafety ul {
+    font-family: 'Big Shoulders Display', fantasy;
+    font-size: 2vw;
+    font-weight: normal;
+    text-shadow: -1px 2px 7px #000000;
+}
+
+#covidSafety ul {
+    display: inline-block;    
+}
+
+
+/*
+Book Online section
+*/
+
+.bookOnlineSection {
+    background-image: url(../images/bookOnlineBG.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
+    padding-top: 0;
+    padding-bottom: 20vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+.bookOnlineSection h2 {
+    font-family: 'Cookie', cursive;
+    font-size: 4.25vw;
+    font-weight: normal;
+    color: #FCFCFC;
+    text-shadow: -2px 3px 5px black;
+    -ms-transform: translateY(215%);
+        -webkit-transform: translateY(215%);
+            transform: translateY(215%);
+}
+
+@media screen and (min-width: 0px) {
+    .bookOnlineSection input[type=button] {
+        background-color: #82B2E0;
+        background: rgba(130, 178, 224, 0.8);
+        color: white;
+        font-weight: bold;
+        word-break: break-word;
+        font-size: 1.6vw;
+        max-width: 75%;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 96px;
+        padding-right: 96px;
+        border: 2px solid white;
+        border-radius: 15px;
+        text-decoration: none;
+        font-family: sans-serif;
+        top: 50%;
+        -ms-transform: translateY(422%);
+        -webkit-transform: translateY(122%);
+                transform: translateY(122%);
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .bookOnlineSection input[type=button] {
+        background-color: #82B2E0;
+        background: rgba(130, 178, 224, 0.8);
+        color: white;
+        font-weight: bold;
+        word-break: break-word;
+        font-size: 1.6vw;
+        max-width: 75%;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 96px;
+        padding-right: 96px;
+        border: 2px solid white;
+        border-radius: 15px;
+        text-decoration: none;
+        font-family: sans-serif;
+        top: 50%;
+        -ms-transform: translateY(122%);
+        -webkit-transform: translateY(222%);
+                transform: translateY(222%);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .bookOnlineSection input[type=button] {
+        background-color: #82B2E0;
+        background: rgba(130, 178, 224, 0.8);
+        color: white;
+        font-weight: bold;
+        word-break: break-word;
+        font-size: 1.6vw;
+        max-width: 75%;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 96px;
+        padding-right: 96px;
+        border: 2px solid white;
+        border-radius: 15px;
+        text-decoration: none;
+        font-family: sans-serif;
+        top: 50%;
+        -ms-transform: translateY(322%);
+        -webkit-transform: translateY(322%);
+                transform: translateY(322%);
+    }
+}
+
+.bookOnlineSection input[type=button]:hover {
+    background-color:rgba(255,204,0,0.8);
+}
+
+
+/*
+footer
+*/
+
+.iconBackground {
+    background-image: url(../images/footerBackground.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 2.25vw;
+    overflow: hidden;
+    clear: both;
+}
+
+.copywriteBackground {
+    background-image: url(../images/wateryBG.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 1.45vw;
+    padding-bottom: 1.45vw;
+    clear: both;
+    overflow: hidden;
+}
+
+.copy {
+    color: white;
+    margin: 0;
+    font-size: 1.25vw;
+}
+
+.copy a {
+    text-decoration:none;
+}
+
+footer p {
+    font-family: 'Kurale', serif;
+    font-weight: normal;
+    font-size: 1.15vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.socialSet {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 2.25vw;
+
+}
+
+.fa-facebook-square {
+    color: #2D5A94;
+}
+
+.fa-facebook-square:hover {
+    color: rgba(255, 206, 0);
+}
+
+.fa-instagram {
+    background: -webkit-linear-gradient(45deg, #FCB406, #9506E2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-instagram:hover {
+    background: -webkit-linear-gradient(45deg, #0619fc, #ffce00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-twitter-square {
+    color: #61ABDE;
+}
+
+.fa-twitter-square:hover {
+    color: rgba(255, 206, 0);
+}

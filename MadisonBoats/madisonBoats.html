@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Main website for Madison Boats and it's three locations">
+    <title>Madison Boats</title>
+    
+    <!-- CSS reset to start from neutral slate across all browsers -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- General CSS file, with added prefixes for multi-browser compatibility -->
+    <link rel="stylesheet" href="css/styles-autoprefixed.css">
+    
+    <!-- Font Awesome links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kurale">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lemon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Big Shoulders Display">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/v4-shims.css">
+    
+    <!-- Animation links -->
+    <link rel="stylesheet" href="animate/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+</head>
+
+<body>
+    
+    <div id="top"></div>
+    <header>
+        <img src="images/navbarOverlay.jpg" id="navbar" class="backgroundImage">
+        <nav>       
+            <a href="#top"><img src="images/logo.png" alt="Madison Boats logo" class="navImage"></a>
+            <div class="links">
+                <a href="#covidSafety">COVID-19 Safety</a>&nbsp;&nbsp; <a href="#bookOnline">Book Online</a>&nbsp;&nbsp; <a href="#ourBoats">Our Boats</a>
+            </div>
+        </nav>
+            <img src="images/heroImage2.jpg" class="heroImage" alt="Group of young people boating on the lake by Monona Terrace">
+            <div class="container2">
+               <div class="vertical-center2">
+                    <h1 class="wow bounceInUp" data-wow-duration="2s">MADISON BOATS</h1>
+                    <h2 class="wow animate__pulse" data-wow-duration="2.25s">Safe On the Water<br>Easy, Fun, Boating for Everyone</h2>
+                    <input type="button" class="wow fadeIn" data-wow-duration="1.5s" onclick="location.href='https://www.madisonboats.com/';" value="Book Online"/>
+                </div>
+            </div>
+    </header>
+
+    <section id="ourBoats" class="ourBoatsSection"> 
+        <article class="wow slideInLeft" data-wow-duration="1.25s" data-wow-delay="0.25s">
+            <img src="images/easyBooking.png" alt="Girl booking a rental the social distance way at a computer">
+            <div>
+                <h3>Easy Rental</h3>
+                <p class="leftAlignment">Choose your location, date, time, duration, and number of boats. On the day of your rental, find a space in the park away from others and wait for a text or call letting you know your boat is ready. Follow the directional signs to get to your paddle and PFDs.</p>
+            </div>
+        </article>
+        <article class="wow slideInUp" data-wow-duration="1.25s" data-wow-delay="0.05s">
+            <img src="images/threeLocations.png" alt="Three location markers on a map">
+            <div>
+              <h3>Three Locations</h3>
+              <p class="middleAlignment">Three great locations to serve you. Wingra Boats on Knickerbocker Street, Brittingham Boats at Brittingham Place, and Marshall Boats on Allen Boulevard.</p>
+            </div>
+        </article>
+        <article class="wow slideInRight" data-wow-duration="1.25s" data-wow-delay="0s">
+            <img src="images/boatsAndMore.png" alt="Family on the water doing stand up paddleboarding">
+            <div>
+              <h3>Boats and More</h3>
+              <p class="rightAlignment">Join us on the lake! We have something for all boat lovers, from canoes to single and tandem kayaks. Stand up paddle boards, paddle boats, duck paddle boats, as well as pontoon boat rentals!</p>
+            </div>
+        </article>
+    </section>
+
+    <section id="covidSafety" class="covidSafetySection">
+           <img src="images/covidSafety.png" alt="dock on the water free of crowds" class="safetyImage">
+           <div class="safetyText">
+                <h3>COVID-19 Safety</h3>
+                <p>To keep you safe we are:</p>
+                <ul>
+                    <li class="wow fadeInUp" data-wow-delay="0.5s">&#43;Sanitizing all boats and paddles after every use</li>
+                    <li class="wow fadeInUp" data-wow-delay="1.5s">&#43;PFD's are used only 1 time after 72 hours</li>
+                    <li class="wow fadeInUp" data-wow-delay="2.5s">&#43;All staff will wear face masks or face shields</li>
+                    <li class="wow fadeInUp" data-wow-delay="3.5s">&#43;All bookings are done online to reduce interactions</li>
+                </ul>
+            </div>
+       <div class="clear"></div>
+    </section>
+
+    <section id="bookOnline" class="bookOnlineSection">
+        <div class="container">
+            <div class="vertical-center">
+                <h2>Get Back To What You Love</h2>
+                <input type="button" class="wow fadeIn" data-wow-duration="2s" onclick="location.href='https://www.madisonboats.com/';" value="Book Online"/>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <p class="iconBackground"><a href="www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x socialSet"></i></a>
+    <a href="www.instagram.com" target="_blank"><i class="fab fa-instagram fa-3x socialSet"></i></a>
+    <a href="www.twitter.com" target="_blank"><i class="fab fa-twitter-square fa-3x socialSet"></i></a></p>
+    <p class="copy copywriteBackground">&copy;2021 Madison Boats | <a href="mailto:info@madisonboats.com">info@madisonboats.com</a></p>
+</footer>
+
+<!-- Master JQuery Code -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Smooth scroll animated anchor links code -->
+<script>
+    $(document).ready(function() {
+        $('a[href^="#"]').on('click', function(e) {
+            e.preventDefault();
+            var target = this.hash,
+                $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function() {
+                window.location.hash = target;
+            });
+        });
+    });
+</script>
+<!-- Animation effects code -->
+<script src="animate/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>>
+
+</body>
+</html>
