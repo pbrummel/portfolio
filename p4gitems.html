@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Portfolio site for Peter Brummel">
+    <meta name="author" content="Peter Brummel">
+    <meta charset="UTF-8">
+    <title>Peter Brummel</title>
+
+    <!-- CSS normalization to start from neutral slate across all browsers -->
+    <link rel="stylesheet" href="normalize.css">
+
+    <!-- Google Font Links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kurale">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=STIX Two Text">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Big Shoulders Display">
+    <link href="https://fonts.cdnfonts.com/css/comica-bd" rel="stylesheet">
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- General CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_comicBook.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">Peter Brummel</a></h1>
+
+        <nav class="navbar nav-fill navbar-expand-md" aria-label="Main navigation">
+            <a class="navbar-brand" href="#"></a>
+            <button type="button" class="navbar-toggler navbar-light float-right text-right" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" role="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse show navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item"><a class="nav-link" href="apps.html">Apps</a></li>
+                    <li class="nav-item"><a class="nav-link" href="branding.html">Branding</a></li>
+                    <li class="nav-item"><a class="nav-link" href="websites.html">Websites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="UIUX.html">UI/UX</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gameUIUX.html">Game UI/UX</a></li>
+                    <li class="nav-item"><a class="nav-link" href="misc.html">Misc.</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2>Persona 4 Golden / Items Menu</h2>
+        <p class="ml-5 mr-5 mb-2">The intent of this project was to improve the Item Menu, whereby the player has to spend <br>countless seconds scrolling up and 
+            down to find the specific item they are looking for in one long, vertical list. <br>This UI fix adds in nine specific ategories, each with their own image 
+            on the left, allowing the player to more <br>quickly find the item they're looking for. You can click on the images below to enlarge them and bring up a slideshow.
+        <br>
+            <h3 class="text-center">Game images edited with Photoshop</p>
+
+    </header>
+
+    <main>
+        <!-- Slideshow Container -->
+        <div id="slideshow" class="modal">
+            <!-- Close Button -->
+            <span class="close">&times;</span>
+    
+            <!-- Navigation Buttons -->
+            <button class="prev">&laquo; Previous</button>
+            <button class="next">Next &raquo;</button>
+    
+            <!-- Modal Content (Image) -->
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    
+        <!-- Thumbnails -->
+        <img class="thumbnail" src="p4gOriginal.png" alt="Original screen">
+        <img class="thumbnail" src="p4g_restorativeItems.png" alt="Restorative Items">
+        <img class="thumbnail" src="p4gKeyItems.png" alt="Key Items">
+        <img class="thumbnail" src="p4gBooks.png" alt="Books">
+    </main>
+    
+    <br>
+
+    <footer>
+        <br>
+        <a class="email" href="aboutMe.html">About Me</a>
+        <br>
+        <a class="email" href="https://pbrummel.github.io/resume/" target="_blank">Resume</a>
+        <br>
+        <a class="email" href="mailto:pbrummel@gmail.com">Contact</a>
+    </footer>
+
+    <script>
+        const modal = document.getElementById("slideshow");
+        const modalImg = document.getElementById("img01");
+        const captionText = document.getElementById("caption");
+        const closeModal = document.querySelector(".close");
+        const prevBtn = document.querySelector(".prev");
+        const nextBtn = document.querySelector(".next");
+        const thumbnails = document.querySelectorAll(".thumbnail");
+
+        // Track the current image index
+        let currentIndex = 0;
+
+        // Open modal and show selected image
+        thumbnails.forEach((img, index) => {
+            img.addEventListener("click", () => {
+                modal.style.display = "flex"; // Flex layout for centering
+                updateModal(index);
+            });
+        });
+
+
+        // Close the modal
+        closeModal.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        // Navigate to the previous image
+        prevBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : thumbnails.length - 1;
+            updateModal(currentIndex);
+        });
+
+        // Navigate to the next image
+        nextBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % thumbnails.length;
+            updateModal(currentIndex);
+        });
+
+        // Update modal content based on currentIndex
+        function updateModal(index) {
+            currentIndex = index;
+            modalImg.src = thumbnails[currentIndex].src;
+            captionText.innerText = thumbnails[currentIndex].alt;
+            prevBtn.style.display = nextBtn.style.display = "block"; // Show navigation buttons
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
